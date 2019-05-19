@@ -17,7 +17,13 @@
 - when sqlservr invokes the "sysinfo" system call (to see how much physical memory the host has) we instead lie to sqlservr with our redefined sysinfo function
 
 
+## how to use
+- pull from docker hub's build of this repository:
+    - `docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d justin2004/mssql_server_tiny`
+- or build this image yourself
 
+
+---
 
 - `https://hub.docker.com/_/microsoft-mssql-server`
 - `https://github.com/Microsoft/mssql-docker`
